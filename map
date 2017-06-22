@@ -284,7 +284,6 @@
                 renderStoreList(stores)
             }
 
-               
             }else{
                 $('#loading').hide();
                 $('#zControls').hide();
@@ -292,10 +291,7 @@
                 $( "#page_content" ).fadeIn( "fast");
             }
         }
-        
-        
-    
-    
+
     function goToStore(store_details){
         if(typeof(store_details) != 'undefined' && store_details != null){
             window.location.href = "/stores/"+store_details.slug;
