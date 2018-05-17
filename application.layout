@@ -91,7 +91,8 @@
             });      
         });
         
-        setEndPoint('//queenscommons.mallmaverick.com/api/v4/queenscommons/all.json');
+        // setEndPoint('//queenscommons.mallmaverick.com/api/v4/queenscommons/all.json');
+        setEndPoint('//twinpine.mallmaverick.com/api/v4/twinpine/all.json');
     </script>
     <style>
         /*custom styles*/
