@@ -164,7 +164,7 @@
             renderPageData('#centre_info_container','#centre_info_template',propertyDetails, 'property_details')
             renderPageData('#centre_info_container_mobile','#centre_info_template_mobile',propertyDetails, 'property_details');
             prefix = get_prefix();
-            var pages_json = prefix+"/pages/queenscommons-contact-us.json"
+            var pages_json = prefix+"/pages/queenscommons-contact.json"
             $.getJSON(pages_json).done(function(data) {
                 $('#mm_title').html(data.title);
                 // $('#mm_title_phone').html(data.title);
