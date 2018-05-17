@@ -174,9 +174,9 @@
                 $('#mm_page_content').html(data.body);
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
-                    $("#mm_page_content").text("Sorry. We cant find the page you looking for.");
+                    console.log("Sorry. We cant find the page " + pages_json);
                 }
-            }); 
+            });
             $("#loading_screen").hide();
             $("#main_content").show();
         }
