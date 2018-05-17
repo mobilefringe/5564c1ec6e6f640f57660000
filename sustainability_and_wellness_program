@@ -97,7 +97,7 @@
                             val.alt_promo_image_url = (store_details.store_front_url_abs);
                             val.store_name = store_details.name
                         } else {
-                            val.alt_promo_image_url = "//kodekloud.s3.amazonaws.com/sites/54e4c5846e6f640b1b000000/6375a90d520e4cfa50d1213136196677/village_default.jpg"
+                            val.alt_promo_image_url = "//kodekloud.s3.amazonaws.com/sites/5564c1ec6e6f640f57660000/4e48a59cc7477b521dd627f2305104a1/default.jpg"
                         }
                     } else {
                         val.alt_promo_image_url = (val.promo_image_url_abs);
