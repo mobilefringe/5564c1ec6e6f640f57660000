@@ -94,7 +94,11 @@
                     if ((val.promo_image_url_abs).indexOf('missing.png') > -1){
                         if (val.promotionable_type == "Store") {
                             var store_details = getStoreDetailsByID(val.promotionable_id);
-                            val.alt_promo_image_url = (store_details.store_front_url_abs);
+                            if ((store_details.store_front_url_abs).indexOf('missing.png') > -1) {
+                                val.alt_promo_image_url = "//kodekloud.s3.amazonaws.com/sites/5564c1ec6e6f640f57660000/4e48a59cc7477b521dd627f2305104a1/default.jpg"
+                            } else {
+                                val.alt_promo_image_url = (store_details.store_front_url_abs);    
+                            }
                             val.store_name = store_details.name
                         } else {
                             val.alt_promo_image_url = "//kodekloud.s3.amazonaws.com/sites/5564c1ec6e6f640f57660000/4e48a59cc7477b521dd627f2305104a1/default.jpg"
