@@ -13,7 +13,7 @@
     </div>
     <div class="inside_page_content">
         <div class="left_column">
-            <img class="inside_banner_image" alt="" src="//kodekloud.s3.amazonaws.com/sites/5564c1ec6e6f640f57660000/6ac4ed139ba686ed05ca3c533369b572/stores.png"/>
+            <img class="inside_banner_image" alt="" src=""/>
             <!--<a href="/map"><p class="right_column_header" id="mobile_centre_map_link" style="display:none">centre map</p></a><br>-->
             <div class="mobile_cat_list" style="display:none">
                 <p class="right_column_header">categories</p>
@@ -88,6 +88,13 @@
             
             $("#loading_screen").hide();
             $("#main_content").show();
+            
+            // dynamic banner 
+            var bannerInfo = getRepoDetailsByName('Stores Banner')
+            var bannerImageUrl = bannerInfo.images[0].image_url
+            if (bannerImageUrl) {
+                $(".inside_banner_image").attr("src", bannerImageUrl);
+            }
         }
         
     
